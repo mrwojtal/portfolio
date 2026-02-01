@@ -3,9 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Krzysztof Wojtal Portfolio</title>
+    <meta name="description" content="Krzysztof Wojtal   /   Electronics and Telecommunications Engineer    /    Electronics Technican">
+    <meta name="author" content="Krzysztof Wojtal">
+    <meta property="og:title" content="Krzysztof Wojtal">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mrwojtal.github.io//index.html">
+    <meta property="og:image" content="https://mrwojtal.github.io//static/my_photo.jpg">
+    <meta property="og:image:alt" content="Krzysztof Wojtal Profile Image">
+
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div>WIP</div>
+    <header class="pg-header">
+        <div class="header-container">
+            <div class="header-left">
+                <img src="static/my_photo.jpg" alt="Krzysztof Wojtal Profile Image" class="photo">
+            </div>
+            <div class="header-right">
+                <h1>KRZYSZTOF WOJTAL</h1>
+                <h1>Bachelor of Electronics and Telecommunications</h1>
+                <ul class="link-list">
+                    <li><a href="mailto:wojtalk01@gmail.com">wojtalk01@gmail.com</a></li>
+                    <li><a href="https://github.com/mrwojtal">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/krzysztof-wojtal-ba41392a0/">LinkedIn</a></li>
+                </ul>
+            </div>    
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="left">
+            <h2>WORK EXPERIENCE</h2>
+            <ul class="master-list">
+                <li>
+                    <h3>ITV System Test Engineer</h3>
+                    <h3><a href="https://www.aptiv.com/pl">Aptiv</a></h3>
+                    <h4>Feb 2023 - present</h4>
+                <ul class="sub-list">
+                    <li>Black-box, HIL testing following customer specific requirements</li>
+                    <li>Development of automated and manual testcases</li>
+                    <li>Development and enhancement of test environment and testing tools</li>
+                    <li>Vector software and hardware toolset (CANoe, CAPL, VTSystem)</li>
+                    <li>Testing process automation with CI/CT pipelines implementation</li>
+                    <li>Development of tools for testin related activities automation</li>
+                    <li>Creation and review od test reports</li>
+                    <li>Creation of Bug tickets, precise description of encountered problems</li>
+                    <li>Strict cooperation with other competencies on daily basis</li>
+                </ul>
+                </li>
+                <li>
+                    <h3>Electronics Technician</h3>
+                    <h3><a href="https://wdre.pl/">WDR Elektro</a></h3>
+                    <h4>May 2021 - Oct 2021</h4>
+                <ul class="sub-list">
+                    <li>Electronic devices assembling, THT, SMD soldering</li>
+                    <li>Customized wiring assembling</li>
+                    <li>Hardware testing</li>
+                </ul>
+                </li>
+            </ul>
+            <h2>PROJECTS</h2>
+            <ul class="master-list">
+                <li>
+                    <h3>Car Data Logger - <a href="https://github.com/mrwojtal/BlackBox/">Blackbox</a></h3>
+                    <p>The BlackBox project is a Raspberry Pi Pico 2W application that works as a car data logger, 
+                        using an ELM327-based OBD-II interface to read vehicle diagnostics and store the data.<br>
+                        It integrates Bluetooth (btstack) and SD card storage (no-OS FatFS) for logging.</p>
+                    <ul class="sub-list">
+                        <li>Bare Metal programming with C, building project from scratch with CMake</li>
+                        <li>Integration of 2 third party libraries</li>
+                        <li>Implementation of logging functionality for debugging purposes</li>
+                        <li>Implementation of API for DS1302 and LIS3DH</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Implementation of Multithread sorting algorithms - <a href="https://github.com/mrwojtal/PIASK/">OMP, MPI, CUDA sorting</a></h3>
+                    <p>Comparison of sorting algorithms using various multithreading technics.<br>
+                       Created OMP, MPI, CUDA versions of quick sort algorithm and compared implementations on
+                       ARES supercomputer in AGH Cyfronet.<br></p>
+                    <ul class="sub-list">
+                        <li>Simple quicksort algorithm implementations in C</li>
+                        <li>Comparison of algorithms performance on large array</li>
+                        <li>Multithreaded programming</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Weather information app - <a href="https://github.com/mrwojtal/WeatherMonitor/">WeatherMonitor</a></h3>
+                    <p>Java-based application for monitoring weather conditions and air quality.<br>
+                       The goal of the project is to create a simple, portable weather monitoring system<br>
+                       with the ability to analyze real-time weather data from the internet.</p>
+                    <ul class="sub-list">
+                        <li>Collect and diplay weather parameters such as temperature and air quality</li>
+                        <li>Display real-time data in GUI</li>
+                        <li>Plot data on readable graphs</li>
+                        <div class="container">
+                            <figure>
+                                <img src="static/weather_monitor_gui.png" alt="WeatherMonitor GUI" width="400" height="200">
+                                <figcaption>WeatherMonitor GUI</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="static/weather_monitor_chart.png" alt="WeatherMonitor chart" width="400" height="200">
+                                <figcaption>WeatherMonitor chart</figcaption>
+                            </figure>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Java Calculator - <a href="https://github.com/mrwojtal/JavaSwingCalculator/">JavaSwingCalculator</a></h3>
+                    <p>Simple Java GUI calculator app, created for training in Java Swing.</p>
+                    <ul class="sub-list">
+                        <li>GUI calculator implementation featuring Java Swing</li>
+                        <li>Implemented operations like add, subtract, multiply, divide</li>
+                        <li>Implemented robust input validation and user-friendly logic ensuring seamless opertion</li>
+                        <figure>
+                            <img src="static/calculator_gui.png" alt="Java calculator GUI" width="200" height="300">
+                            <figcaption>Java Calculator GUI</figcaption>
+                        </figure>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <h2>EDUCATION</h2>
+            <ul class="master-list">
+                <li>
+                    <h3>Master of Electronics and Telecommunications</h3>
+                    <h3><a href="https://www.agh.edu.pl/">AGH University of Science and Technology</a></h3>
+                    <h4>2025-2026</h4>
+                </li>
+                <li>
+                    <h3>Bachelor of Electronics and Telecommunications</h3>
+                    <h3><a href="https://www.agh.edu.pl/">AGH University of Science and Technology</a></h3>
+                    <h4>2021-2025</h4>
+                </li>
+                <li>
+                    <h3>Electronics Technician</h3>
+                    <h3><a href="https://tl.krakow.pl/">Upper Secondary School of Communications in Cracow</a></h3>
+                    <h4>2017-2021</h4>
+                </li>
+            </ul>
+            <h2>SKILLS</h2>
+            <ul class="skill-list">
+                <li>
+                    <div class="skill-info">
+                        <span class="skill-name">Manual, automated testing</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%;"></div>
+                            </div>
+                        <span class="skill-comment">Expert</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-info">
+                        <span class="skill-name">Embedded Systems</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        <span class="skill-comment">Advanced</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-info">
+                        <span class="skill-name">Object Oriented Programming</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        <span class="skill-comment">Advanced</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-info">
+                        <span class="skill-name">C, C++, Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        <span class="skill-comment">Advanced</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-info">
+                        <span class="skill-name">Bash, Linux</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+                        <span class="skill-comment">Intermediate</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-info">
+                        <span class="skill-name">Networking</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+                        <span class="skill-comment">Intermediate</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-info">
+                        <span class="skill-name">Electronics</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+                        <span class="skill-comment">Intermediate</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-info">
+                        <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 65%;"></div>
+                            </div>
+                        <span class="skill-comment">Intermediate, still learning</span>
+                    </div>
+                </li>
+            </ul>
+            <h2>INTERESTS, HOBBIES</h2>
+            <ul class="master-list">
+                <li>
+                    <h3>Music and Vintage Audio</h3>
+                    <figure>
+                        <img src="static/IM_Warsaw_2022.jpg" alt="Iron Maiden Warsaw Show 2022" width="400" height="238">
+                        <figcaption>Iron Maiden Warsaw Show 2022</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="static/IM_Krakow_2023.jpg" alt="Iron Maiden Krakow Show 2023" width="400" height="238">
+                        <figcaption>Iron Maiden Krakow Show 2023</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <h3>Hiking trips</h3>
+                    <figure>
+                        <img src="static/ornak_view.jpg" alt="View from Ornak" width="400" height="238">
+                        <figcaption>View from Ornak</figcaption>
+                    </figure>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    <footer class="pg-footer"></footer>
 </body>
 </html>
