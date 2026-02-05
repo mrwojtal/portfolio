@@ -7,8 +7,8 @@
 }
 
 .photo {
-    width: 250px;
-    height: 250px;
+    width: 15vw;
+    height: 15vw;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -16,19 +16,17 @@
 .header-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 16px;
-    padding: 16px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: auto auto;
+    gap: 1vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 
 .main-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0;
+    /* gap: 5vw; */
 }
 
 h2 {
@@ -36,7 +34,6 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    font-weight: 700;
 }
 
 h4 {
@@ -53,23 +50,25 @@ h2::before, h2::after {
 
 @media (min-width: 768px) {
   .header-container {
-    grid-template-columns: 250px auto;
+    grid-template-columns: 15vw 1fr;
   }
   .main-container {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 .left {
     border-right: 1px solid #ccc;
-    padding-right: 20px;
-    padding-left: 100px;
+    padding-left: 5vw;
+    padding-right: 1vw;
+    max-width: 50vw;
 }
 
 .right {
     border-left: 1px solid #ccc;
-    padding-left: 20px;
-    padding-right: 100px;
+    padding-right: 5vw;
+    padding-left: 1vw;
+    max-width: 50vw;
 }
 
 .master-list {
@@ -104,7 +103,7 @@ h2::before, h2::after {
   background: linear-gradient(180deg, #3498db, #9b59b6);
 }
 
-.master-list > li::after {
+/* .master-list > li::after {
   content: "✔";
   position: absolute;
   right: 16px;
@@ -113,7 +112,7 @@ h2::before, h2::after {
   font-size: 1.2rem;
   color: #3498db;
   transition: transform 0.3s, color 0.3s;
-}
+} */
 
 .master-list > li:hover::after {
   transform: translateY(-50%) rotate(20deg);
